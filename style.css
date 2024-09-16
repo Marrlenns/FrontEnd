@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #f0f8ff, #e0f7fa); /* Градиентный фон */
     color: #333;
     padding: 20px;
@@ -14,7 +14,7 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom right, #ffffff, #f7f9fc); /* Градиентный фон для контейнера */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -39,6 +39,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ff6347; /* Красно-оранжевая рамка вокруг фотографии */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Тень вокруг фото */
 }
 
 .header-text {
@@ -50,6 +51,7 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     color: #ff6347; /* Красно-оранжевый цвет текста заголовка */
+    text-shadow: 2px 2px #ffe4e1; /* Тень для текста */
 }
 
 .header-text p {
@@ -60,19 +62,26 @@ body {
 .contact-info {
     display: flex;
     justify-content: space-around;
-    background-color: #f7f7f7; /* Светлый фон для блока контактов */
-    padding: 10px;
+    background: #ff6347; /* Красно-оранжевый фон для блока контактов */
+    color: white;
+    padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень вокруг блока */
 }
 
 .contact-info p {
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 8px;
 }
 
 .contact-info a {
-    color: #4682b4; /* Голубой цвет ссылок */
+    color: #ffffff; /* Белый цвет ссылок */
     text-decoration: none;
 }
 
@@ -82,28 +91,31 @@ body {
 
 .section {
     margin-bottom: 30px;
-    background-color: #f9f9f9; /* Светлый серый фон для секций */
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #e0f7fa, #f0f8ff); /* Градиентный фон для секций */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .section:nth-child(even) {
-    background-color: #e0f7fa; /* Голубой фон для четных секций */
+    background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa); /* Чередующиеся градиенты для секций */
 }
 
 .section h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #4682b4; /* Голубой цвет заголовков разделов */
-    border-bottom: 2px solid #4682b4; /* Подчеркивание заголовков */
-    display: inline-block;
-    padding-bottom: 5px;
+    text-shadow: 1px 1px #dcdcdc; /* Тень для заголовков */
 }
 
 .section p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 10px;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.8); /* Тень для текста */
+}
+
+.section p strong {
+    color: #ff6347; /* Цвет выделенного текста */
 }
 
