@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f8ff; /* Светло-голубой цвет фона */
     color: #333;
     padding: 20px;
 }
@@ -14,16 +14,17 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #ffffff; /* Белый фон для основного блока */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-left: 10px solid #4682b4; /* Голубая вертикальная полоса слева */
 }
 
 .header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #4682b4; /* Голубая линия */
     margin-bottom: 20px;
 }
 
@@ -33,10 +34,11 @@ body {
 }
 
 .photo img {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Maintain a square aspect ratio */
-    border-radius: 50%; /* Makes the photo a circle */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #4682b4; /* Голубая рамка вокруг фотографии */
 }
 
 .header-text {
@@ -47,6 +49,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #4682b4; /* Голубой цвет текста заголовка */
 }
 
 .header-text p {
@@ -65,7 +68,7 @@ body {
 }
 
 .contact-info a {
-    color: #0066cc;
+    color: #4682b4; /* Голубой цвет ссылок */
     text-decoration: none;
 }
 
@@ -80,7 +83,10 @@ body {
 .section h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: #4682b4; /* Голубой цвет заголовков разделов */
+    border-bottom: 2px solid #4682b4; /* Подчеркивание заголовков */
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .section p {
@@ -88,3 +94,4 @@ body {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+
